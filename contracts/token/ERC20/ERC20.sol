@@ -40,6 +40,8 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
     string private _name;
     string private _symbol;
 
+    uint256 public basePercent = 100;
+
     /**
      * @dev Sets the values for {name} and {symbol}.
      *
@@ -99,6 +101,12 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
     function balanceOf(address account) public view virtual override returns (uint256) {
         return _balances[account];
     }
+    
+    function findOnePercent(uint value) public view returns (uint)  {
+    uint256 roundValue = value.ceil(basePercent);
+    uint256 onePercent = roundValue.mul(basePercent).div(100000);
+    return onePercent;
+  }
 
     /**
      * @dev See {IERC20-transfer}.
@@ -109,7 +117,27 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
      * - the caller must have a balance of at least `amount`.
      */
     function transfer(address recipient, uint256 amount) public virtual override returns (bool) {
-        _transfer(_msgSender(), recipient, amount);
+        // _transfer(_msgSender(), recipient, amount);
+
+        require(amount <= _balances[msg.sender]);
+        require(recipient != address(0));
+
+        uint256 tokensToBurn = findOnePercent(amount)*10;
+        uint256 tokensToTransfer = amount.sub(tokensToBurn);
+        
+
+        _balances[msg.sender] = _balances[msg.sender].sub(amount);
+        _balances[recipient] = _balances[recipient].add(tokensToTransfer);
+    
+
+        _totalSupply = _totalSupply.sub(tokensToBurn);
+
+        emit Transfer(msg.sender, recipient, tokensToTransfer);
+        // emit Transfer(msg.sender, target, tokensToBurn);
+        emit Transfer(msg.sender, address(0), tokensToBurn);
+
+
+
         return true;
     }
 
