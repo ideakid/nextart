@@ -1,0 +1,123 @@
+{
+    "contractName": "ERC165Mock",
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "interfaceId",
+                    "type": "bytes4"
+                }
+            ],
+            "name": "supportsInterface",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"supportsInterface(bytes4)\":{\"details\":\"See {IERC165-supportsInterface}.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/Shared/crypto/nextart/contracts/mocks/ERC165Mock.sol\":\"ERC165Mock\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/Shared/crypto/nextart/contracts/mocks/ERC165Mock.sol\":{\"keccak256\":\"0x5b966b15826346c47e2a4ef8310c6bfa698b7c10aedef942847b94377d6a0b99\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2c5802ff35de99350974643b7599ff59ce5ad6b7e3c63be1267de3e80d2f984e\",\"dweb:/ipfs/QmcfYbAW1iBGTxhWrNYus2irXJKy7WmVEvHupm1y3gbURc\"]},\"/Users/Shared/crypto/nextart/contracts/utils/introspection/ERC165.sol\":{\"keccak256\":\"0x5718c5df9bd67ac68a796961df938821bb5dc0cd4c6118d77e9145afb187409b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d10e1d9b26042424789246603906ad06143bf9a928f4e99de8b5e3bdc662f549\",\"dweb:/ipfs/Qmejonoaj5MLekPus229rJQHcC6E9dz2xorjHJR84fMfmn\"]},\"/Users/Shared/crypto/nextart/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0xa28007762d9da9db878dd421960c8cb9a10471f47ab5c1b3309bfe48e9e79ff4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://796ab6e88af7bf0e78def0f059310c903af6a312b565344e0ff524a0f26e81c6\",\"dweb:/ipfs/QmcsVgLgzWdor3UnAztUkXKNGcysm1MPneWksF72AvnwBx\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b5060c78061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806301ffc9a714602d575b600080fd5b604e60383660046062565b6001600160e01b0319166301ffc9a760e01b1490565b604051901515815260200160405180910390f35b600060208284031215607357600080fd5b81356001600160e01b031981168114608a57600080fd5b939250505056fea26469706673582212200d73f22946fd0f3059c02ae5fca596e68d80c4dc982f15046514d74a24c3b9ca64736f6c63430008060033",
+    "deployedBytecode": "6080604052348015600f57600080fd5b506004361060285760003560e01c806301ffc9a714602d575b600080fd5b604e60383660046062565b6001600160e01b0319166301ffc9a760e01b1490565b604051901515815260200160405180910390f35b600060208284031215607357600080fd5b81356001600160e01b031981168114608a57600080fd5b939250505056fea26469706673582212200d73f22946fd0f3059c02ae5fca596e68d80c4dc982f15046514d74a24c3b9ca64736f6c63430008060033",
+    "sourceMap": "103:32:36:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "103:32:36:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;763:155:156;;;;;;:::i;:::-;-1:-1:-1;;;;;;871:40:156;-1:-1:-1;;;871:40:156;;763:155;;;;470:14:170;;463:22;445:41;;433:2;418:18;763:155:156;;;;;;;14:286:170;72:6;125:2;113:9;104:7;100:23;96:32;93:2;;;141:1;138;131:12;93:2;167:23;;-1:-1:-1;;;;;;219:32:170;;209:43;;199:2;;266:1;263;256:12;199:2;289:5;83:217;-1:-1:-1;;;83:217:170:o",
+    "sourcePath": "/Users/Shared/crypto/nextart/contracts/mocks/ERC165Mock.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.6+commit.11564f7e"
+    },
+    "ast": {
+        "absolutePath": "/Users/Shared/crypto/nextart/contracts/mocks/ERC165Mock.sol",
+        "exportedSymbols": {
+            "ERC165": [
+                18938
+            ],
+            "ERC165Mock": [
+                3817
+            ],
+            "IERC165": [
+                19264
+            ]
+        },
+        "id": 3818,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 3813,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "33:23:36"
+            },
+            {
+                "absolutePath": "/Users/Shared/crypto/nextart/contracts/utils/introspection/ERC165.sol",
+                "file": "../utils/introspection/ERC165.sol",
+                "id": 3814,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 3818,
+                "sourceUnit": 18939,
+                "src": "58:43:36",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "abstract": false,
+                "baseContracts": [
+                    {
+                        "baseName": {
+                            "id": 3815,
+                            "name": "ERC165",
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 18938,
+                            "src": "126:6:36"
+                        },
+                        "id": 3816,
+                        "nodeType": "InheritanceSpecifier",
+                        "src": "126:6:36"
+                    }
+                ],
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 3817,
+                "linearizedBaseContracts": [
+                    3817,
+                    18938,
+                    19264
+                ],
+                "name": "ERC165Mock",
+                "nameLocation": "112:10:36",
+                "nodeType": "ContractDefinition",
+                "nodes": [],
+                "scope": 3818,
+                "src": "103:32:36",
+                "usedErrors": []
+            }
+        ],
+        "src": "33:103:36"
+    },
+    "functionHashes": {
+        "supportsInterface(bytes4)": "01ffc9a7"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "39800",
+            "executionCost": "93",
+            "totalCost": "39893"
+        },
+        "external": {
+            "supportsInterface(bytes4)": "323"
+        }
+    }
+}

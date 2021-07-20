@@ -1,0 +1,146 @@
+{
+    "contractName": "ERC165MissingData",
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "interfaceId",
+                    "type": "bytes4"
+                }
+            ],
+            "name": "supportsInterface",
+            "outputs": [],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/Shared/crypto/nextart/contracts/mocks/ERC165/ERC165MissingData.sol\":\"ERC165MissingData\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/Shared/crypto/nextart/contracts/mocks/ERC165/ERC165MissingData.sol\":{\"keccak256\":\"0xa797e082e132df753e2c4ed517dc9a60004083f696b7e7fe16a1a2ff66e3e72e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5682856cefe42b5eefd8214dbae515a8f391c9c7f226e85e71d1bc1f5ea71859\",\"dweb:/ipfs/QmeZvjSHjFy6B1V8Lpu9CaW2iXujvoqZ5qYBK1c6HjHL4q\"]}},\"version\":1}",
+    "bytecode": "6080604052348015600f57600080fd5b5060a28061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806301ffc9a714602d575b600080fd5b603b6038366004603d565b50565b005b600060208284031215604e57600080fd5b81356001600160e01b031981168114606557600080fd5b939250505056fea264697066735822122052f1ece438932f390b84f60de972b4f6896191a4040325f1c9168637a7c1f1ad64736f6c63430008060033",
+    "deployedBytecode": "6080604052348015600f57600080fd5b506004361060285760003560e01c806301ffc9a714602d575b600080fd5b603b6038366004603d565b50565b005b600060208284031215604e57600080fd5b81356001600160e01b031981168114606557600080fd5b939250505056fea264697066735822122052f1ece438932f390b84f60de972b4f6896191a4040325f1c9168637a7c1f1ad64736f6c63430008060033",
+    "sourceMap": "58:114:33:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "58:114:33:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;91:61;;;;;;:::i;:::-;;;;;14:286:170;72:6;125:2;113:9;104:7;100:23;96:32;93:2;;;141:1;138;131:12;93:2;167:23;;-1:-1:-1;;;;;;219:32:170;;209:43;;199:2;;266:1;263;256:12;199:2;289:5;83:217;-1:-1:-1;;;83:217:170:o",
+    "sourcePath": "/Users/Shared/crypto/nextart/contracts/mocks/ERC165/ERC165MissingData.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.6+commit.11564f7e"
+    },
+    "ast": {
+        "absolutePath": "/Users/Shared/crypto/nextart/contracts/mocks/ERC165/ERC165MissingData.sol",
+        "exportedSymbols": {
+            "ERC165MissingData": [
+                3741
+            ]
+        },
+        "id": 3742,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 3734,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "33:23:33"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 3741,
+                "linearizedBaseContracts": [
+                    3741
+                ],
+                "name": "ERC165MissingData",
+                "nameLocation": "67:17:33",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "body": {
+                            "id": 3739,
+                            "nodeType": "Block",
+                            "src": "150:2:33",
+                            "statements": []
+                        },
+                        "functionSelector": "01ffc9a7",
+                        "id": 3740,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "supportsInterface",
+                        "nameLocation": "100:17:33",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 3737,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 3736,
+                                    "mutability": "mutable",
+                                    "name": "interfaceId",
+                                    "nameLocation": "125:11:33",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 3740,
+                                    "src": "118:18:33",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bytes4",
+                                        "typeString": "bytes4"
+                                    },
+                                    "typeName": {
+                                        "id": 3735,
+                                        "name": "bytes4",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "118:6:33",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bytes4",
+                                            "typeString": "bytes4"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "117:20:33"
+                        },
+                        "returnParameters": {
+                            "id": 3738,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "150:0:33"
+                        },
+                        "scope": 3741,
+                        "src": "91:61:33",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 3742,
+                "src": "58:114:33",
+                "usedErrors": []
+            }
+        ],
+        "src": "33:140:33"
+    },
+    "functionHashes": {
+        "supportsInterface(bytes4)": "01ffc9a7"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "32400",
+            "executionCost": "87",
+            "totalCost": "32487"
+        },
+        "external": {
+            "supportsInterface(bytes4)": "238"
+        }
+    }
+}

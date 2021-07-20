@@ -1,0 +1,65 @@
+{
+    "contractName": "ERC165NotSupported",
+    "abi": [],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/Shared/crypto/nextart/contracts/mocks/ERC165/ERC165NotSupported.sol\":\"ERC165NotSupported\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/Shared/crypto/nextart/contracts/mocks/ERC165/ERC165NotSupported.sol\":{\"keccak256\":\"0x10590faccb835675869e65f55b97085319c0412d872c6abc2903f65b86c6d950\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d6f523caffac4feeb45dcdf054a1fb56f0d557b53b640a95caf3d7987438a55a\",\"dweb:/ipfs/QmePz11sAJewMK1She9NTvZo6vydj4bb5x6iTRwjPhdKpo\"]}},\"version\":1}",
+    "bytecode": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220ac740aded3dbce7e297fc52cf750c6304c48985c1f8a50d6847a9649ff6b819864736f6c63430008060033",
+    "deployedBytecode": "6080604052600080fdfea2646970667358221220ac740aded3dbce7e297fc52cf750c6304c48985c1f8a50d6847a9649ff6b819864736f6c63430008060033",
+    "sourceMap": "58:30:34:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "58:30:34:-:0;;;;;",
+    "sourcePath": "/Users/Shared/crypto/nextart/contracts/mocks/ERC165/ERC165NotSupported.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.6+commit.11564f7e"
+    },
+    "ast": {
+        "absolutePath": "/Users/Shared/crypto/nextart/contracts/mocks/ERC165/ERC165NotSupported.sol",
+        "exportedSymbols": {
+            "ERC165NotSupported": [
+                3744
+            ]
+        },
+        "id": 3745,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 3743,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "33:23:34"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 3744,
+                "linearizedBaseContracts": [
+                    3744
+                ],
+                "name": "ERC165NotSupported",
+                "nameLocation": "67:18:34",
+                "nodeType": "ContractDefinition",
+                "nodes": [],
+                "scope": 3745,
+                "src": "58:30:34",
+                "usedErrors": []
+            }
+        ],
+        "src": "33:56:34"
+    },
+    "functionHashes": {},
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "12600",
+            "executionCost": "66",
+            "totalCost": "12666"
+        }
+    }
+}

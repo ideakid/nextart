@@ -1,0 +1,743 @@
+{
+    "contractName": "AccessControlMock",
+    "abi": [
+        {
+            "inputs": [],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "previousAdminRole",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "newAdminRole",
+                    "type": "bytes32"
+                }
+            ],
+            "name": "RoleAdminChanged",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                }
+            ],
+            "name": "RoleGranted",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "sender",
+                    "type": "address"
+                }
+            ],
+            "name": "RoleRevoked",
+            "type": "event"
+        },
+        {
+            "inputs": [],
+            "name": "DEFAULT_ADMIN_ROLE",
+            "outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32"
+                }
+            ],
+            "name": "getRoleAdmin",
+            "outputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "",
+                    "type": "bytes32"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                }
+            ],
+            "name": "grantRole",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                }
+            ],
+            "name": "hasRole",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                }
+            ],
+            "name": "renounceRole",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "role",
+                    "type": "bytes32"
+                },
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                }
+            ],
+            "name": "revokeRole",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "roleId",
+                    "type": "bytes32"
+                }
+            ],
+            "name": "senderProtected",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes32",
+                    "name": "roleId",
+                    "type": "bytes32"
+                },
+                {
+                    "internalType": "bytes32",
+                    "name": "adminRoleId",
+                    "type": "bytes32"
+                }
+            ],
+            "name": "setRoleAdmin",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "interfaceId",
+                    "type": "bytes4"
+                }
+            ],
+            "name": "supportsInterface",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"previousAdminRole\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"newAdminRole\",\"type\":\"bytes32\"}],\"name\":\"RoleAdminChanged\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"}],\"name\":\"RoleGranted\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"}],\"name\":\"RoleRevoked\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"DEFAULT_ADMIN_ROLE\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"}],\"name\":\"getRoleAdmin\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"grantRole\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"hasRole\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"renounceRole\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"role\",\"type\":\"bytes32\"},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"revokeRole\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"roleId\",\"type\":\"bytes32\"}],\"name\":\"senderProtected\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"roleId\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"adminRoleId\",\"type\":\"bytes32\"}],\"name\":\"setRoleAdmin\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"getRoleAdmin(bytes32)\":{\"details\":\"Returns the admin role that controls `role`. See {grantRole} and {revokeRole}. To change a role's admin, use {_setRoleAdmin}.\"},\"grantRole(bytes32,address)\":{\"details\":\"Grants `role` to `account`. If `account` had not been already granted `role`, emits a {RoleGranted} event. Requirements: - the caller must have ``role``'s admin role.\"},\"hasRole(bytes32,address)\":{\"details\":\"Returns `true` if `account` has been granted `role`.\"},\"renounceRole(bytes32,address)\":{\"details\":\"Revokes `role` from the calling account. Roles are often managed via {grantRole} and {revokeRole}: this function's purpose is to provide a mechanism for accounts to lose their privileges if they are compromised (such as when a trusted device is misplaced). If the calling account had been granted `role`, emits a {RoleRevoked} event. Requirements: - the caller must be `account`.\"},\"revokeRole(bytes32,address)\":{\"details\":\"Revokes `role` from `account`. If `account` had been granted `role`, emits a {RoleRevoked} event. Requirements: - the caller must have ``role``'s admin role.\"},\"supportsInterface(bytes4)\":{\"details\":\"See {IERC165-supportsInterface}.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/Shared/crypto/nextart/contracts/mocks/AccessControlMock.sol\":\"AccessControlMock\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/Shared/crypto/nextart/contracts/access/AccessControl.sol\":{\"keccak256\":\"0x4064dc9c8b4605d31822511a71bb668b1e7a23bc2bbed1df57813bdc9398217d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e629709fcafaf6de37170d35db522d32c9caf0bf762b6fb2bac05e998e408eee\",\"dweb:/ipfs/QmWqSYZW1i8jjDh22XPYtjFG3X1pTv4nPzLRynLR26x2Qw\"]},\"/Users/Shared/crypto/nextart/contracts/mocks/AccessControlMock.sol\":{\"keccak256\":\"0x07e710f29b7ca6f75c641ebf99c666f15f796bf94d101250b0bc2a5bf93ac8b3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c2e4132e55394052df0e6b44ca7a9336b9402f1088d1c4683f8d9a64de093d3f\",\"dweb:/ipfs/QmUnyzgm5cyXNN8EGeM8t26DPxQHcZTWuyK6kkBRq5q9JS\"]},\"/Users/Shared/crypto/nextart/contracts/utils/Context.sol\":{\"keccak256\":\"0x95098bd1d9c8dec4d80d3dedb88a0d949fa0d740ee99f2aa466bc308216ca6d5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7fec968dcd68e13961521fa3c7dd87baecad91a2653b19240e81f21cc4f3ba85\",\"dweb:/ipfs/QmaXtsYt4Mphm8XHNUfk2me1cF3ssS2SqDBNFpYAzMjomC\"]},\"/Users/Shared/crypto/nextart/contracts/utils/Strings.sol\":{\"keccak256\":\"0x391d3ba97ab6856a16b225d6ee29617ad15ff00db70f3b4df1ab5ea33aa47c9d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d636ba90bbbeed04a1ea7fe9ec2466757e30fd38ba2ca173636dbf69a518735e\",\"dweb:/ipfs/QmQwCB2BHnEuYR22PYt9HkpbgeFDhq4rHmaYqAZbX3WRC7\"]},\"/Users/Shared/crypto/nextart/contracts/utils/introspection/ERC165.sol\":{\"keccak256\":\"0x5718c5df9bd67ac68a796961df938821bb5dc0cd4c6118d77e9145afb187409b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d10e1d9b26042424789246603906ad06143bf9a928f4e99de8b5e3bdc662f549\",\"dweb:/ipfs/Qmejonoaj5MLekPus229rJQHcC6E9dz2xorjHJR84fMfmn\"]},\"/Users/Shared/crypto/nextart/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0xa28007762d9da9db878dd421960c8cb9a10471f47ab5c1b3309bfe48e9e79ff4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://796ab6e88af7bf0e78def0f059310c903af6a312b565344e0ff524a0f26e81c6\",\"dweb:/ipfs/QmcsVgLgzWdor3UnAztUkXKNGcysm1MPneWksF72AvnwBx\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b5061001c600033610021565b6100cd565b61002b828261002f565b5050565b6000828152602081815260408083206001600160a01b038516845290915290205460ff1661002b576000828152602081815260408083206001600160a01b03851684529091529020805460ff191660011790556100893390565b6001600160a01b0316816001600160a01b0316837f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d60405160405180910390a45050565b610830806100dc6000396000f3fe608060405234801561001057600080fd5b50600436106100935760003560e01c806336568abe1161006657806336568abe146101195780634b9304a41461012c57806391d148541461013f578063a217fddf14610152578063d547741f1461015a57600080fd5b806301ffc9a7146100985780631e4e0091146100c0578063248a9ca3146100d55780632f2ff15d14610106575b600080fd5b6100ab6100a6366004610668565b61016d565b60405190151581526020015b60405180910390f35b6100d36100ce366004610646565b6101a4565b005b6100f86100e33660046105f1565b60009081526020819052604090206001015490565b6040519081526020016100b7565b6100d361011436600461060a565b6101b2565b6100d361012736600461060a565b6101dd565b6100d361013a3660046105f1565b61025c565b6100ab61014d36600461060a565b610267565b6100f8600081565b6100d361016836600461060a565b610290565b60006001600160e01b03198216637965db0b60e01b148061019e57506301ffc9a760e01b6001600160e01b03198316145b92915050565b6101ae82826102b6565b5050565b6000828152602081905260409020600101546101ce8133610301565b6101d88383610365565b505050565b6001600160a01b03811633146102525760405162461bcd60e51b815260206004820152602f60248201527f416363657373436f6e74726f6c3a2063616e206f6e6c792072656e6f756e636560448201526e103937b632b9903337b91039b2b63360891b60648201526084015b60405180910390fd5b6101ae82826103e9565b806101ae8133610301565b6000918252602082815260408084206001600160a01b0393909316845291905290205460ff1690565b6000828152602081905260409020600101546102ac8133610301565b6101d883836103e9565b600082815260208190526040808220600101805490849055905190918391839186917fbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff9190a4505050565b61030b8282610267565b6101ae57610323816001600160a01b0316601461044e565b61032e83602061044e565b60405160200161033f929190610692565b60408051601f198184030181529082905262461bcd60e51b825261024991600401610707565b61036f8282610267565b6101ae576000828152602081815260408083206001600160a01b03851684529091529020805460ff191660011790556103a53390565b6001600160a01b0316816001600160a01b0316837f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d60405160405180910390a45050565b6103f38282610267565b156101ae576000828152602081815260408083206001600160a01b0385168085529252808320805460ff1916905551339285917ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b9190a45050565b6060600061045d836002610752565b61046890600261073a565b67ffffffffffffffff811115610480576104806107e4565b6040519080825280601f01601f1916602001820160405280156104aa576020820181803683370190505b509050600360fc1b816000815181106104c5576104c56107ce565b60200101906001600160f81b031916908160001a905350600f60fb1b816001815181106104f4576104f46107ce565b60200101906001600160f81b031916908160001a9053506000610518846002610752565b61052390600161073a565b90505b600181111561059b576f181899199a1a9b1b9c1cb0b131b232b360811b85600f1660108110610557576105576107ce565b1a60f81b82828151811061056d5761056d6107ce565b60200101906001600160f81b031916908160001a90535060049490941c93610594816107a1565b9050610526565b5083156105ea5760405162461bcd60e51b815260206004820181905260248201527f537472696e67733a20686578206c656e67746820696e73756666696369656e746044820152606401610249565b9392505050565b60006020828403121561060357600080fd5b5035919050565b6000806040838503121561061d57600080fd5b8235915060208301356001600160a01b038116811461063b57600080fd5b809150509250929050565b6000806040838503121561065957600080fd5b50508035926020909101359150565b60006020828403121561067a57600080fd5b81356001600160e01b0319811681146105ea57600080fd5b7f416363657373436f6e74726f6c3a206163636f756e74200000000000000000008152600083516106ca816017850160208801610771565b7001034b99036b4b9b9b4b733903937b6329607d1b60179184019182015283516106fb816028840160208801610771565b01602801949350505050565b6020815260008251806020840152610726816040850160208701610771565b601f01601f19169190910160400192915050565b6000821982111561074d5761074d6107b8565b500190565b600081600019048311821515161561076c5761076c6107b8565b500290565b60005b8381101561078c578181015183820152602001610774565b8381111561079b576000848401525b50505050565b6000816107b0576107b06107b8565b506000190190565b634e487b7160e01b600052601160045260246000fd5b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052604160045260246000fdfea2646970667358221220e4e885150f652de76ab03674a2a96f0367cf316bd9089ebc2c509ba7d7c6bd7e64736f6c63430008060033",
+    "deployedBytecode": "608060405234801561001057600080fd5b50600436106100935760003560e01c806336568abe1161006657806336568abe146101195780634b9304a41461012c57806391d148541461013f578063a217fddf14610152578063d547741f1461015a57600080fd5b806301ffc9a7146100985780631e4e0091146100c0578063248a9ca3146100d55780632f2ff15d14610106575b600080fd5b6100ab6100a6366004610668565b61016d565b60405190151581526020015b60405180910390f35b6100d36100ce366004610646565b6101a4565b005b6100f86100e33660046105f1565b60009081526020819052604090206001015490565b6040519081526020016100b7565b6100d361011436600461060a565b6101b2565b6100d361012736600461060a565b6101dd565b6100d361013a3660046105f1565b61025c565b6100ab61014d36600461060a565b610267565b6100f8600081565b6100d361016836600461060a565b610290565b60006001600160e01b03198216637965db0b60e01b148061019e57506301ffc9a760e01b6001600160e01b03198316145b92915050565b6101ae82826102b6565b5050565b6000828152602081905260409020600101546101ce8133610301565b6101d88383610365565b505050565b6001600160a01b03811633146102525760405162461bcd60e51b815260206004820152602f60248201527f416363657373436f6e74726f6c3a2063616e206f6e6c792072656e6f756e636560448201526e103937b632b9903337b91039b2b63360891b60648201526084015b60405180910390fd5b6101ae82826103e9565b806101ae8133610301565b6000918252602082815260408084206001600160a01b0393909316845291905290205460ff1690565b6000828152602081905260409020600101546102ac8133610301565b6101d883836103e9565b600082815260208190526040808220600101805490849055905190918391839186917fbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff9190a4505050565b61030b8282610267565b6101ae57610323816001600160a01b0316601461044e565b61032e83602061044e565b60405160200161033f929190610692565b60408051601f198184030181529082905262461bcd60e51b825261024991600401610707565b61036f8282610267565b6101ae576000828152602081815260408083206001600160a01b03851684529091529020805460ff191660011790556103a53390565b6001600160a01b0316816001600160a01b0316837f2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d60405160405180910390a45050565b6103f38282610267565b156101ae576000828152602081815260408083206001600160a01b0385168085529252808320805460ff1916905551339285917ff6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b9190a45050565b6060600061045d836002610752565b61046890600261073a565b67ffffffffffffffff811115610480576104806107e4565b6040519080825280601f01601f1916602001820160405280156104aa576020820181803683370190505b509050600360fc1b816000815181106104c5576104c56107ce565b60200101906001600160f81b031916908160001a905350600f60fb1b816001815181106104f4576104f46107ce565b60200101906001600160f81b031916908160001a9053506000610518846002610752565b61052390600161073a565b90505b600181111561059b576f181899199a1a9b1b9c1cb0b131b232b360811b85600f1660108110610557576105576107ce565b1a60f81b82828151811061056d5761056d6107ce565b60200101906001600160f81b031916908160001a90535060049490941c93610594816107a1565b9050610526565b5083156105ea5760405162461bcd60e51b815260206004820181905260248201527f537472696e67733a20686578206c656e67746820696e73756666696369656e746044820152606401610249565b9392505050565b60006020828403121561060357600080fd5b5035919050565b6000806040838503121561061d57600080fd5b8235915060208301356001600160a01b038116811461063b57600080fd5b809150509250929050565b6000806040838503121561065957600080fd5b50508035926020909101359150565b60006020828403121561067a57600080fd5b81356001600160e01b0319811681146105ea57600080fd5b7f416363657373436f6e74726f6c3a206163636f756e74200000000000000000008152600083516106ca816017850160208801610771565b7001034b99036b4b9b9b4b733903937b6329607d1b60179184019182015283516106fb816028840160208801610771565b01602801949350505050565b6020815260008251806020840152610726816040850160208701610771565b601f01601f19169190910160400192915050565b6000821982111561074d5761074d6107b8565b500190565b600081600019048311821515161561076c5761076c6107b8565b500290565b60005b8381101561078c578181015183820152602001610774565b8381111561079b576000848401525b50505050565b6000816107b0576107b06107b8565b506000190190565b634e487b7160e01b600052601160045260246000fd5b634e487b7160e01b600052603260045260246000fd5b634e487b7160e01b600052604160045260246000fdfea2646970667358221220e4e885150f652de76ab03674a2a96f0367cf316bd9089ebc2c509ba7d7c6bd7e64736f6c63430008060033",
+    "sourceMap": "97:323:11:-:0;;;147:75;;;;;;;;;-1:-1:-1;171:44:11;2441:4:1;665:10:143;171::11;:44::i;:::-;97:323;;7614:110:1;7692:25;7703:4;7709:7;7692:10;:25::i;:::-;7614:110;;:::o;8102:224::-;4442:4;4465:12;;;;;;;;;;;-1:-1:-1;;;;;4465:29:1;;;;;;;;;;;;8171:149;;8214:6;:12;;;;;;;;;;;-1:-1:-1;;;;;8214:29:1;;;;;;;;;:36;;-1:-1:-1;;8214:36:1;8246:4;8214:36;;;8296:12;665:10:143;;586:96;8296:12:1;-1:-1:-1;;;;;8269:40:1;8287:7;-1:-1:-1;;;;;8269:40:1;8281:4;8269:40;;;;;;;;;;8102:224;;:::o;97:323:11:-;;;;;;;",
+    "deployedSourceMap": "97:323:11:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4075:202:1;;;;;;:::i;:::-;;:::i;:::-;;;2058:14:170;;2051:22;2033:41;;2021:2;2006:18;4075:202:1;;;;;;;;228:117:11;;;;;;:::i;:::-;;:::i;:::-;;5447:121:1;;;;;;:::i;:::-;5513:7;5539:12;;;;;;;;;;:22;;;;5447:121;;;;2231:25:170;;;2219:2;2204:18;5447:121:1;2186:76:170;5818:145:1;;;;;;:::i;:::-;;:::i;6835:214::-;;;;;;:::i;:::-;;:::i;351:67:11:-;;;;;;:::i;:::-;;:::i;4364:137:1:-;;;;;;:::i;:::-;;:::i;2396:49::-;;2441:4;2396:49;;6197:147;;;;;;:::i;:::-;;:::i;4075:202::-;4160:4;-1:-1:-1;;;;;;4183:47:1;;-1:-1:-1;;;4183:47:1;;:87;;-1:-1:-1;;;;;;;;;;871:40:156;;;4234:36:1;4176:94;4075:202;-1:-1:-1;;4075:202:1:o;228:117:11:-;304:34;318:6;326:11;304:13;:34::i;:::-;228:117;;:::o;5818:145:1:-;5513:7;5539:12;;;;;;;;;;:22;;;3960:30;3971:4;665:10:143;3960::1;:30::i;:::-;5931:25:::1;5942:4;5948:7;5931:10;:25::i;:::-;5818:145:::0;;;:::o;6835:214::-;-1:-1:-1;;;;;6930:23:1;;665:10:143;6930:23:1;6922:83;;;;-1:-1:-1;;;6922:83:1;;3218:2:170;6922:83:1;;;3200:21:170;3257:2;3237:18;;;3230:30;3296:34;3276:18;;;3269:62;-1:-1:-1;;;3347:18:170;;;3340:45;3402:19;;6922:83:1;;;;;;;;;7016:26;7028:4;7034:7;7016:11;:26::i;351:67:11:-;408:6;3960:30:1;408:6:11;665:10:143;3960::1;:30::i;4364:137::-;4442:4;4465:12;;;;;;;;;;;-1:-1:-1;;;;;4465:29:1;;;;;;;;;;;;;;;4364:137::o;6197:147::-;5513:7;5539:12;;;;;;;;;;:22;;;3960:30;3971:4;665:10:143;3960::1;:30::i;:::-;6311:26:::1;6323:4;6329:7;6311:11;:26::i;7849:247::-:0;7932:25;5539:12;;;;;;;;;;;:22;;;;7988:34;;;;8037:52;;5539:22;;7988:34;;5539:22;;:12;;8037:52;;7932:25;8037:52;7922:174;7849:247;;:::o;4782:484::-;4862:22;4870:4;4876:7;4862;:22::i;:::-;4857:403;;5045:41;5073:7;-1:-1:-1;;;;;5045:41:1;5083:2;5045:19;:41::i;:::-;5157:38;5185:4;5192:2;5157:19;:38::i;:::-;4952:265;;;;;;;;;:::i;:::-;;;;-1:-1:-1;;4952:265:1;;;;;;;;;;-1:-1:-1;;;4900:349:1;;;;;;;:::i;8102:224::-;8176:22;8184:4;8190:7;8176;:22::i;:::-;8171:149;;8214:6;:12;;;;;;;;;;;-1:-1:-1;;;;;8214:29:1;;;;;;;;;:36;;-1:-1:-1;;8214:36:1;8246:4;8214:36;;;8296:12;665:10:143;;586:96;8296:12:1;-1:-1:-1;;;;;8269:40:1;8287:7;-1:-1:-1;;;;;8269:40:1;8281:4;8269:40;;;;;;;;;;8102:224;;:::o;8332:225::-;8406:22;8414:4;8420:7;8406;:22::i;:::-;8402:149;;;8476:5;8444:12;;;;;;;;;;;-1:-1:-1;;;;;8444:29:1;;;;;;;;;;:37;;-1:-1:-1;;8444:37:1;;;8500:40;665:10:143;;8444:12:1;;8500:40;;8476:5;8500:40;8332:225;;:::o;1535:441:148:-;1610:13;1635:19;1667:10;1671:6;1667:1;:10;:::i;:::-;:14;;1680:1;1667:14;:::i;:::-;1657:25;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;1657:25:148;;1635:47;;-1:-1:-1;;;1692:6:148;1699:1;1692:9;;;;;;;;:::i;:::-;;;;:15;-1:-1:-1;;;;;1692:15:148;;;;;;;;;-1:-1:-1;;;1717:6:148;1724:1;1717:9;;;;;;;;:::i;:::-;;;;:15;-1:-1:-1;;;;;1717:15:148;;;;;;;;-1:-1:-1;1747:9:148;1759:10;1763:6;1759:1;:10;:::i;:::-;:14;;1772:1;1759:14;:::i;:::-;1747:26;;1742:132;1779:1;1775;:5;1742:132;;;-1:-1:-1;;;1826:5:148;1834:3;1826:11;1813:25;;;;;;;:::i;:::-;;;;1801:6;1808:1;1801:9;;;;;;;;:::i;:::-;;;;:37;-1:-1:-1;;;;;1801:37:148;;;;;;;;-1:-1:-1;1862:1:148;1852:11;;;;;1782:3;;;:::i;:::-;;;1742:132;;;-1:-1:-1;1891:10:148;;1883:55;;;;-1:-1:-1;;;1883:55:148;;2857:2:170;1883:55:148;;;2839:21:170;;;2876:18;;;2869:30;2935:34;2915:18;;;2908:62;2987:18;;1883:55:148;2829:182:170;1883:55:148;1962:6;1535:441;-1:-1:-1;;;1535:441:148:o;14:180:170:-;73:6;126:2;114:9;105:7;101:23;97:32;94:2;;;142:1;139;132:12;94:2;-1:-1:-1;165:23:170;;84:110;-1:-1:-1;84:110:170:o;199:354::-;267:6;275;328:2;316:9;307:7;303:23;299:32;296:2;;;344:1;341;334:12;296:2;367:23;;;-1:-1:-1;440:2:170;425:18;;412:32;-1:-1:-1;;;;;473:31:170;;463:42;;453:2;;519:1;516;509:12;453:2;542:5;532:15;;;286:267;;;;;:::o;558:248::-;626:6;634;687:2;675:9;666:7;662:23;658:32;655:2;;;703:1;700;693:12;655:2;-1:-1:-1;;726:23:170;;;796:2;781:18;;;768:32;;-1:-1:-1;645:161:170:o;811:286::-;869:6;922:2;910:9;901:7;897:23;893:32;890:2;;;938:1;935;928:12;890:2;964:23;;-1:-1:-1;;;;;;1016:32:170;;1006:43;;996:2;;1063:1;1060;1053:12;1102:786;1513:25;1508:3;1501:38;1483:3;1568:6;1562:13;1584:62;1639:6;1634:2;1629:3;1625:12;1618:4;1610:6;1606:17;1584:62;:::i;:::-;-1:-1:-1;;;1705:2:170;1665:16;;;1697:11;;;1690:40;1755:13;;1777:63;1755:13;1826:2;1818:11;;1811:4;1799:17;;1777:63;:::i;:::-;1860:17;1879:2;1856:26;;1491:397;-1:-1:-1;;;;1491:397:170:o;2267:383::-;2416:2;2405:9;2398:21;2379:4;2448:6;2442:13;2491:6;2486:2;2475:9;2471:18;2464:34;2507:66;2566:6;2561:2;2550:9;2546:18;2541:2;2533:6;2529:15;2507:66;:::i;:::-;2634:2;2613:15;-1:-1:-1;;2609:29:170;2594:45;;;;2641:2;2590:54;;2388:262;-1:-1:-1;;2388:262:170:o;3432:128::-;3472:3;3503:1;3499:6;3496:1;3493:13;3490:2;;;3509:18;;:::i;:::-;-1:-1:-1;3545:9:170;;3480:80::o;3565:168::-;3605:7;3671:1;3667;3663:6;3659:14;3656:1;3653:21;3648:1;3641:9;3634:17;3630:45;3627:2;;;3678:18;;:::i;:::-;-1:-1:-1;3718:9:170;;3617:116::o;3738:258::-;3810:1;3820:113;3834:6;3831:1;3828:13;3820:113;;;3910:11;;;3904:18;3891:11;;;3884:39;3856:2;3849:10;3820:113;;;3951:6;3948:1;3945:13;3942:2;;;3986:1;3977:6;3972:3;3968:16;3961:27;3942:2;;3791:205;;;:::o;4001:136::-;4040:3;4068:5;4058:2;;4077:18;;:::i;:::-;-1:-1:-1;;;4113:18:170;;4048:89::o;4142:127::-;4203:10;4198:3;4194:20;4191:1;4184:31;4234:4;4231:1;4224:15;4258:4;4255:1;4248:15;4274:127;4335:10;4330:3;4326:20;4323:1;4316:31;4366:4;4363:1;4356:15;4390:4;4387:1;4380:15;4406:127;4467:10;4462:3;4458:20;4455:1;4448:31;4498:4;4495:1;4488:15;4522:4;4519:1;4512:15",
+    "sourcePath": "/Users/Shared/crypto/nextart/contracts/mocks/AccessControlMock.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.6+commit.11564f7e"
+    },
+    "ast": {
+        "absolutePath": "/Users/Shared/crypto/nextart/contracts/mocks/AccessControlMock.sol",
+        "exportedSymbols": {
+            "AccessControl": [
+                449
+            ],
+            "AccessControlMock": [
+                2197
+            ],
+            "Context": [
+                17650
+            ],
+            "ERC165": [
+                18938
+            ],
+            "IAccessControl": [
+                121
+            ],
+            "IERC165": [
+                19264
+            ],
+            "Strings": [
+                18153
+            ]
+        },
+        "id": 2198,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 2161,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "33:23:11"
+            },
+            {
+                "absolutePath": "/Users/Shared/crypto/nextart/contracts/access/AccessControl.sol",
+                "file": "../access/AccessControl.sol",
+                "id": 2162,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 2198,
+                "sourceUnit": 450,
+                "src": "58:37:11",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "abstract": false,
+                "baseContracts": [
+                    {
+                        "baseName": {
+                            "id": 2163,
+                            "name": "AccessControl",
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 449,
+                            "src": "127:13:11"
+                        },
+                        "id": 2164,
+                        "nodeType": "InheritanceSpecifier",
+                        "src": "127:13:11"
+                    }
+                ],
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 2197,
+                "linearizedBaseContracts": [
+                    2197,
+                    449,
+                    18938,
+                    19264,
+                    121,
+                    17650
+                ],
+                "name": "AccessControlMock",
+                "nameLocation": "106:17:11",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "body": {
+                            "id": 2173,
+                            "nodeType": "Block",
+                            "src": "161:61:11",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "id": 2168,
+                                                "name": "DEFAULT_ADMIN_ROLE",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 143,
+                                                "src": "182:18:11",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bytes32",
+                                                    "typeString": "bytes32"
+                                                }
+                                            },
+                                            {
+                                                "arguments": [],
+                                                "expression": {
+                                                    "argumentTypes": [],
+                                                    "id": 2169,
+                                                    "name": "_msgSender",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 17640,
+                                                    "src": "202:10:11",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
+                                                        "typeString": "function () view returns (address)"
+                                                    }
+                                                },
+                                                "id": 2170,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "kind": "functionCall",
+                                                "lValueRequested": false,
+                                                "names": [],
+                                                "nodeType": "FunctionCall",
+                                                "src": "202:12:11",
+                                                "tryCall": false,
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_bytes32",
+                                                    "typeString": "bytes32"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            ],
+                                            "id": 2167,
+                                            "name": "_setupRole",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 359,
+                                            "src": "171:10:11",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
+                                                "typeString": "function (bytes32,address)"
+                                            }
+                                        },
+                                        "id": 2171,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "171:44:11",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 2172,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "171:44:11"
+                                }
+                            ]
+                        },
+                        "id": 2174,
+                        "implemented": true,
+                        "kind": "constructor",
+                        "modifiers": [],
+                        "name": "",
+                        "nameLocation": "-1:-1:-1",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 2165,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "158:2:11"
+                        },
+                        "returnParameters": {
+                            "id": 2166,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "161:0:11"
+                        },
+                        "scope": 2197,
+                        "src": "147:75:11",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 2186,
+                            "nodeType": "Block",
+                            "src": "294:51:11",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "id": 2182,
+                                                "name": "roleId",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 2176,
+                                                "src": "318:6:11",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bytes32",
+                                                    "typeString": "bytes32"
+                                                }
+                                            },
+                                            {
+                                                "id": 2183,
+                                                "name": "adminRoleId",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 2178,
+                                                "src": "326:11:11",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bytes32",
+                                                    "typeString": "bytes32"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_bytes32",
+                                                    "typeString": "bytes32"
+                                                },
+                                                {
+                                                    "typeIdentifier": "t_bytes32",
+                                                    "typeString": "bytes32"
+                                                }
+                                            ],
+                                            "id": 2181,
+                                            "name": "_setRoleAdmin",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 387,
+                                            "src": "304:13:11",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_bytes32_$returns$__$",
+                                                "typeString": "function (bytes32,bytes32)"
+                                            }
+                                        },
+                                        "id": 2184,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "304:34:11",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 2185,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "304:34:11"
+                                }
+                            ]
+                        },
+                        "functionSelector": "1e4e0091",
+                        "id": 2187,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "setRoleAdmin",
+                        "nameLocation": "237:12:11",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 2179,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 2176,
+                                    "mutability": "mutable",
+                                    "name": "roleId",
+                                    "nameLocation": "258:6:11",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 2187,
+                                    "src": "250:14:11",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bytes32",
+                                        "typeString": "bytes32"
+                                    },
+                                    "typeName": {
+                                        "id": 2175,
+                                        "name": "bytes32",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "250:7:11",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bytes32",
+                                            "typeString": "bytes32"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 2178,
+                                    "mutability": "mutable",
+                                    "name": "adminRoleId",
+                                    "nameLocation": "274:11:11",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 2187,
+                                    "src": "266:19:11",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bytes32",
+                                        "typeString": "bytes32"
+                                    },
+                                    "typeName": {
+                                        "id": 2177,
+                                        "name": "bytes32",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "266:7:11",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bytes32",
+                                            "typeString": "bytes32"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "249:37:11"
+                        },
+                        "returnParameters": {
+                            "id": 2180,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "294:0:11"
+                        },
+                        "scope": 2197,
+                        "src": "228:117:11",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 2195,
+                            "nodeType": "Block",
+                            "src": "416:2:11",
+                            "statements": []
+                        },
+                        "functionSelector": "4b9304a4",
+                        "id": 2196,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [
+                            {
+                                "arguments": [
+                                    {
+                                        "id": 2192,
+                                        "name": "roleId",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 2189,
+                                        "src": "408:6:11",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bytes32",
+                                            "typeString": "bytes32"
+                                        }
+                                    }
+                                ],
+                                "id": 2193,
+                                "kind": "modifierInvocation",
+                                "modifierName": {
+                                    "id": 2191,
+                                    "name": "onlyRole",
+                                    "nodeType": "IdentifierPath",
+                                    "referencedDeclaration": 183,
+                                    "src": "399:8:11"
+                                },
+                                "nodeType": "ModifierInvocation",
+                                "src": "399:16:11"
+                            }
+                        ],
+                        "name": "senderProtected",
+                        "nameLocation": "360:15:11",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 2190,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 2189,
+                                    "mutability": "mutable",
+                                    "name": "roleId",
+                                    "nameLocation": "384:6:11",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 2196,
+                                    "src": "376:14:11",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bytes32",
+                                        "typeString": "bytes32"
+                                    },
+                                    "typeName": {
+                                        "id": 2188,
+                                        "name": "bytes32",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "376:7:11",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bytes32",
+                                            "typeString": "bytes32"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "375:16:11"
+                        },
+                        "returnParameters": {
+                            "id": 2194,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "416:0:11"
+                        },
+                        "scope": 2197,
+                        "src": "351:67:11",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 2198,
+                "src": "97:323:11",
+                "usedErrors": []
+            }
+        ],
+        "src": "33:388:11"
+    },
+    "functionHashes": {
+        "DEFAULT_ADMIN_ROLE()": "a217fddf",
+        "getRoleAdmin(bytes32)": "248a9ca3",
+        "grantRole(bytes32,address)": "2f2ff15d",
+        "hasRole(bytes32,address)": "91d14854",
+        "renounceRole(bytes32,address)": "36568abe",
+        "revokeRole(bytes32,address)": "d547741f",
+        "senderProtected(bytes32)": "4b9304a4",
+        "setRoleAdmin(bytes32,bytes32)": "1e4e0091",
+        "supportsInterface(bytes4)": "01ffc9a7"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "419200",
+            "executionCost": "29147",
+            "totalCost": "448347"
+        },
+        "external": {
+            "DEFAULT_ADMIN_ROLE()": "261",
+            "getRoleAdmin(bytes32)": "2492",
+            "grantRole(bytes32,address)": "infinite",
+            "hasRole(bytes32,address)": "2665",
+            "renounceRole(bytes32,address)": "28965",
+            "revokeRole(bytes32,address)": "infinite",
+            "senderProtected(bytes32)": "infinite",
+            "setRoleAdmin(bytes32,bytes32)": "26514",
+            "supportsInterface(bytes4)": "427"
+        }
+    }
+}

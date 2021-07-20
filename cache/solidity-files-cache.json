@@ -1,0 +1,6130 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/Shared/crypto/nextart/contracts/access/AccessControl.sol": {
+      "lastModificationDate": 1626056256483,
+      "contentHash": "d9a17a464c1d9e0062f8aceb44b86364",
+      "sourceName": "contracts/access/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol",
+        "../utils/Strings.sol",
+        "../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControl",
+        "IAccessControl"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/Context.sol": {
+      "lastModificationDate": 1626056256565,
+      "contentHash": "07f148e0d44b2ffc23b3ae6dd6e38cfb",
+      "sourceName": "contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1626056256568,
+      "contentHash": "62142442bed149f965c5ed971fae4182",
+      "sourceName": "contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1626056256531,
+      "contentHash": "a9a5319dff9088c6ffe757ea1c2a6729",
+      "sourceName": "contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1626056256533,
+      "contentHash": "9a04322bb8f6b8f2767d8358d1d2537b",
+      "sourceName": "contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/AccessControlMock.sol": {
+      "lastModificationDate": 1626056256207,
+      "contentHash": "9ab346051c25fc9309e084adc6112888",
+      "sourceName": "contracts/mocks/AccessControlMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/AccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControlMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/governance/TimelockController.sol": {
+      "lastModificationDate": 1626056256596,
+      "contentHash": "062325a277693c5beb569fd8d488bec9",
+      "sourceName": "contracts/governance/TimelockController.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/AccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TimelockController"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/access/AccessControlEnumerable.sol": {
+      "lastModificationDate": 1626056256470,
+      "contentHash": "d07cf2af67125b4a1b392ca791c30282",
+      "sourceName": "contracts/access/AccessControlEnumerable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./AccessControl.sol",
+        "../utils/structs/EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControlEnumerable",
+        "IAccessControlEnumerable"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/structs/EnumerableSet.sol": {
+      "lastModificationDate": 1626056256559,
+      "contentHash": "c04459b3f9fd5dcded3ceb57dbba0824",
+      "sourceName": "contracts/utils/structs/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC721/presets/ERC721PresetMinterPauserAutoId.sol": {
+      "lastModificationDate": 1626056256408,
+      "contentHash": "67e5488b82b791ee395a68d9207d78a1",
+      "sourceName": "contracts/token/ERC721/presets/ERC721PresetMinterPauserAutoId.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "../extensions/ERC721Enumerable.sol",
+        "../extensions/ERC721Burnable.sol",
+        "../extensions/ERC721Pausable.sol",
+        "../../../access/AccessControlEnumerable.sol",
+        "../../../utils/Context.sol",
+        "../../../utils/Counters.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721PresetMinterPauserAutoId"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1626056256351,
+      "contentHash": "68557a95c05dac5415ccbeb0a389ccaf",
+      "sourceName": "contracts/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol",
+        "./IERC721Receiver.sol",
+        "./extensions/IERC721Metadata.sol",
+        "../../utils/Address.sol",
+        "../../utils/Context.sol",
+        "../../utils/Strings.sol",
+        "../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC721/extensions/ERC721Enumerable.sol": {
+      "lastModificationDate": 1626056256401,
+      "contentHash": "55752434e41be58192ecbaa3beb4b7cc",
+      "sourceName": "contracts/token/ERC721/extensions/ERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "./IERC721Enumerable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Enumerable"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC721/extensions/ERC721Burnable.sol": {
+      "lastModificationDate": 1626056256404,
+      "contentHash": "c451d6197061b5e0d446b7171af0dc01",
+      "sourceName": "contracts/token/ERC721/extensions/ERC721Burnable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "../../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Burnable"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC721/extensions/ERC721Pausable.sol": {
+      "lastModificationDate": 1626056256399,
+      "contentHash": "13ce5b6b753c018e5c0c356bbb325616",
+      "sourceName": "contracts/token/ERC721/extensions/ERC721Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "../../../security/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Pausable"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/Counters.sol": {
+      "lastModificationDate": 1626056256515,
+      "contentHash": "b7811964d33f23b2d45ed3ebb76a4548",
+      "sourceName": "contracts/utils/Counters.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Counters"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1626056256353,
+      "contentHash": "53919d6975f2c0f3dffee5e3a1064116",
+      "sourceName": "contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1626056256350,
+      "contentHash": "9a367cecca6fed80a3e975b7e6b3bd5c",
+      "sourceName": "contracts/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
+      "lastModificationDate": 1626056256393,
+      "contentHash": "8aa69ca8424167555baaaa9f607801db",
+      "sourceName": "contracts/token/ERC721/extensions/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/Address.sol": {
+      "lastModificationDate": 1626056256519,
+      "contentHash": "1ea1589528625ace210951bc8cd186c9",
+      "sourceName": "contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC721/extensions/IERC721Enumerable.sol": {
+      "lastModificationDate": 1626056256391,
+      "contentHash": "e57b2ff1645fb57408d6f87ee861dcb6",
+      "sourceName": "contracts/token/ERC721/extensions/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/security/Pausable.sol": {
+      "lastModificationDate": 1626056256489,
+      "contentHash": "662437c05ba6f3706097c8d5ca68a52a",
+      "sourceName": "contracts/security/Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Pausable"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC20/extensions/ERC20Snapshot.sol": {
+      "lastModificationDate": 1626056256303,
+      "contentHash": "285296268a10d1275677164d48b5c740",
+      "sourceName": "contracts/token/ERC20/extensions/ERC20Snapshot.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../../../utils/Arrays.sol",
+        "../../../utils/Counters.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Snapshot"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1626056256277,
+      "contentHash": "41ad975425a5d4195ae9fc4f2c980eb4",
+      "sourceName": "contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/Arrays.sol": {
+      "lastModificationDate": 1626056256518,
+      "contentHash": "b4a7cd9430208d853bff41b5338353ab",
+      "sourceName": "contracts/utils/Arrays.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Arrays"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1626056256275,
+      "contentHash": "0eac3e1a83ee62326ca007811285b274",
+      "sourceName": "contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1626056256292,
+      "contentHash": "aa1be06992a99bb7393b26a6af3c4dfb",
+      "sourceName": "contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/math/Math.sol": {
+      "lastModificationDate": 1626056256541,
+      "contentHash": "4e138d2b21c8844ab1799e37d232fb5e",
+      "sourceName": "contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/MathMock.sol": {
+      "lastModificationDate": 1626056256253,
+      "contentHash": "c6fa84338b2c086355768de38de69118",
+      "sourceName": "contracts/mocks/MathMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MathMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC20/extensions/ERC20Votes.sol": {
+      "lastModificationDate": 1626056256298,
+      "contentHash": "12740705b7cfca947ece1a76662e808f",
+      "sourceName": "contracts/token/ERC20/extensions/ERC20Votes.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./draft-ERC20Permit.sol",
+        "../../../utils/math/Math.sol",
+        "../../../utils/math/SafeCast.sol",
+        "../../../utils/cryptography/ECDSA.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Votes"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC20/extensions/draft-ERC20Permit.sol": {
+      "lastModificationDate": 1626056256300,
+      "contentHash": "6e6e1b4929e8a364cbfa97be4e3ef410",
+      "sourceName": "contracts/token/ERC20/extensions/draft-ERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./draft-IERC20Permit.sol",
+        "../ERC20.sol",
+        "../../../utils/cryptography/draft-EIP712.sol",
+        "../../../utils/cryptography/ECDSA.sol",
+        "../../../utils/Counters.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Permit"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/math/SafeCast.sol": {
+      "lastModificationDate": 1626056256542,
+      "contentHash": "b8980ba70f1a32dd81c98fda7e3aac07",
+      "sourceName": "contracts/utils/math/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/cryptography/ECDSA.sol": {
+      "lastModificationDate": 1626056256505,
+      "contentHash": "87ad64d143162461c01c2c9ef4020f5d",
+      "sourceName": "contracts/utils/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC20/extensions/draft-IERC20Permit.sol": {
+      "lastModificationDate": 1626056256289,
+      "contentHash": "0266cd0875ab6ce1b05e87cce62120c0",
+      "sourceName": "contracts/token/ERC20/extensions/draft-IERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Permit"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/cryptography/draft-EIP712.sol": {
+      "lastModificationDate": 1626056256508,
+      "contentHash": "549712dc273f006b866af22f6fb3cadc",
+      "sourceName": "contracts/utils/cryptography/draft-EIP712.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ECDSA.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EIP712"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC20VotesMock.sol": {
+      "lastModificationDate": 1626056256225,
+      "contentHash": "053434c5bb49ac564e581ceb1181b7e1",
+      "sourceName": "contracts/mocks/ERC20VotesMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/extensions/ERC20Votes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20VotesMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/cryptography/SignatureChecker.sol": {
+      "lastModificationDate": 1626056256506,
+      "contentHash": "f302bf089c9243de5c6b40ef70f41136",
+      "sourceName": "contracts/utils/cryptography/SignatureChecker.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ECDSA.sol",
+        "../Address.sol",
+        "../../interfaces/IERC1271.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SignatureChecker"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/interfaces/IERC1271.sol": {
+      "lastModificationDate": 1626056256602,
+      "contentHash": "69389258a66f5201f087767c44d8df74",
+      "sourceName": "contracts/interfaces/IERC1271.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1271"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC1271WalletMock.sol": {
+      "lastModificationDate": 1626056256157,
+      "contentHash": "d541075f1b02dd2fec14bba2ae153f90",
+      "sourceName": "contracts/mocks/ERC1271WalletMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/Ownable.sol",
+        "../interfaces/IERC1271.sol",
+        "../utils/cryptography/ECDSA.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1271WalletMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1626056256473,
+      "contentHash": "4fe56b59ced59d87df6b796758f62895",
+      "sourceName": "contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/proxy/transparent/ProxyAdmin.sol": {
+      "lastModificationDate": 1626056256441,
+      "contentHash": "229133ca3246b191261ba5bdfa2ab91a",
+      "sourceName": "contracts/proxy/transparent/ProxyAdmin.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./TransparentUpgradeableProxy.sol",
+        "../../access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ProxyAdmin"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/proxy/transparent/TransparentUpgradeableProxy.sol": {
+      "lastModificationDate": 1626056256451,
+      "contentHash": "9a6e31a38e04c942d525824b7be729f1",
+      "sourceName": "contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1967/ERC1967Proxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TransparentUpgradeableProxy"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/proxy/ERC1967/ERC1967Proxy.sol": {
+      "lastModificationDate": 1626056256459,
+      "contentHash": "b12e929a2313d46515ebcecdcb157283",
+      "sourceName": "contracts/proxy/ERC1967/ERC1967Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Proxy.sol",
+        "./ERC1967Upgrade.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1967Proxy"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/proxy/Proxy.sol": {
+      "lastModificationDate": 1626056256456,
+      "contentHash": "39dead889de1329620d1634e0b499e30",
+      "sourceName": "contracts/proxy/Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/proxy/ERC1967/ERC1967Upgrade.sol": {
+      "lastModificationDate": 1626056256462,
+      "contentHash": "0a0f799e1bf1527d28cfe1bd43fbab7f",
+      "sourceName": "contracts/proxy/ERC1967/ERC1967Upgrade.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../beacon/IBeacon.sol",
+        "../../utils/Address.sol",
+        "../../utils/StorageSlot.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.2"
+      ],
+      "artifacts": [
+        "ERC1967Upgrade"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/proxy/beacon/IBeacon.sol": {
+      "lastModificationDate": 1626056256463,
+      "contentHash": "e1e6df7276b048c6b544c757c6e179ec",
+      "sourceName": "contracts/proxy/beacon/IBeacon.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IBeacon"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/StorageSlot.sol": {
+      "lastModificationDate": 1626056256535,
+      "contentHash": "dcfdd37663042ccb99d67060a9eaebec",
+      "sourceName": "contracts/utils/StorageSlot.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "StorageSlot"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/proxy/beacon/BeaconProxy.sol": {
+      "lastModificationDate": 1626056256468,
+      "contentHash": "7217d9a0b6e1cf9842df0915c87081ad",
+      "sourceName": "contracts/proxy/beacon/BeaconProxy.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IBeacon.sol",
+        "../Proxy.sol",
+        "../ERC1967/ERC1967Upgrade.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BeaconProxy"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/proxy/beacon/UpgradeableBeacon.sol": {
+      "lastModificationDate": 1626056256465,
+      "contentHash": "ce8ae93e65f6e34105b9abc9d1be67ee",
+      "sourceName": "contracts/proxy/beacon/UpgradeableBeacon.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IBeacon.sol",
+        "../../access/Ownable.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UpgradeableBeacon"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/Multicall.sol": {
+      "lastModificationDate": 1626056256536,
+      "contentHash": "02ef67f7d53580861138486901c5c702",
+      "sourceName": "contracts/utils/Multicall.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Multicall"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/MulticallTokenMock.sol": {
+      "lastModificationDate": 1626056256245,
+      "contentHash": "f3d490698b1a7cdcf440f9d64eca2c57",
+      "sourceName": "contracts/mocks/MulticallTokenMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Multicall.sol",
+        "./ERC20Mock.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MulticallTokenMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC20Mock.sol": {
+      "lastModificationDate": 1626056256189,
+      "contentHash": "afadd2df2b3d63aa4d0f8180932b7b73",
+      "sourceName": "contracts/mocks/ERC20Mock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Mock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC20/presets/ERC20PresetMinterPauser.sol": {
+      "lastModificationDate": 1626056256313,
+      "contentHash": "39699172cbc3cf76aafbd7d3729afa18",
+      "sourceName": "contracts/token/ERC20/presets/ERC20PresetMinterPauser.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../extensions/ERC20Burnable.sol",
+        "../extensions/ERC20Pausable.sol",
+        "../../../access/AccessControlEnumerable.sol",
+        "../../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20PresetMinterPauser"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC20/extensions/ERC20Burnable.sol": {
+      "lastModificationDate": 1626056256288,
+      "contentHash": "e888f903b629e3ced11f5d1f85cda823",
+      "sourceName": "contracts/token/ERC20/extensions/ERC20Burnable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Burnable"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC20/extensions/ERC20Pausable.sol": {
+      "lastModificationDate": 1626056256290,
+      "contentHash": "805c4c7b9aeebbdd5dbca2f3a8acc6af",
+      "sourceName": "contracts/token/ERC20/extensions/ERC20Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../../../security/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Pausable"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC1155/presets/ERC1155PresetMinterPauser.sol": {
+      "lastModificationDate": 1626056256436,
+      "contentHash": "557f65807107a6d13194e504aa4fcff4",
+      "sourceName": "contracts/token/ERC1155/presets/ERC1155PresetMinterPauser.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1155.sol",
+        "../extensions/ERC1155Burnable.sol",
+        "../extensions/ERC1155Pausable.sol",
+        "../../../access/AccessControlEnumerable.sol",
+        "../../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155PresetMinterPauser"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC1155/ERC1155.sol": {
+      "lastModificationDate": 1626056256411,
+      "contentHash": "bb9aeebc72abd49471387e45201a9f34",
+      "sourceName": "contracts/token/ERC1155/ERC1155.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1155.sol",
+        "./IERC1155Receiver.sol",
+        "./extensions/IERC1155MetadataURI.sol",
+        "../../utils/Address.sol",
+        "../../utils/Context.sol",
+        "../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC1155/extensions/ERC1155Burnable.sol": {
+      "lastModificationDate": 1626056256432,
+      "contentHash": "dafe4cd519490b76f3a7076fd3c119a7",
+      "sourceName": "contracts/token/ERC1155/extensions/ERC1155Burnable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Burnable"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC1155/extensions/ERC1155Pausable.sol": {
+      "lastModificationDate": 1626056256423,
+      "contentHash": "62b323a01b102140a0daf43a358541e0",
+      "sourceName": "contracts/token/ERC1155/extensions/ERC1155Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1155.sol",
+        "../../../security/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Pausable"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC1155/IERC1155.sol": {
+      "lastModificationDate": 1626056256415,
+      "contentHash": "bcbcd549c9bfc2da42e5426780ce4e4e",
+      "sourceName": "contracts/token/ERC1155/IERC1155.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC1155/IERC1155Receiver.sol": {
+      "lastModificationDate": 1626056256413,
+      "contentHash": "82e386b6255dba9eb011192f66eb78b6",
+      "sourceName": "contracts/token/ERC1155/IERC1155Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155Receiver"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol": {
+      "lastModificationDate": 1626056256425,
+      "contentHash": "f67c3445291b9506fdff7d6527c9e552",
+      "sourceName": "contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155MetadataURI"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/PausableMock.sol": {
+      "lastModificationDate": 1626056256248,
+      "contentHash": "a5683047c5c3ab9159768ea312956fc6",
+      "sourceName": "contracts/mocks/PausableMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../security/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PausableMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC721/extensions/ERC721URIStorage.sol": {
+      "lastModificationDate": 1626056256389,
+      "contentHash": "94da923c22e9773af388607307182c80",
+      "sourceName": "contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721URIStorage"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC721URIStorageMock.sol": {
+      "lastModificationDate": 1626056256169,
+      "contentHash": "49af10a60f7b5cf77c322f7c002eca81",
+      "sourceName": "contracts/mocks/ERC721URIStorageMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/extensions/ERC721URIStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721URIStorageMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC721Mock.sol": {
+      "lastModificationDate": 1626056256193,
+      "contentHash": "777ca2a3777630c7bec2e6dbc9b7055b",
+      "sourceName": "contracts/mocks/ERC721Mock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/ERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Mock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/introspection/ERC165Checker.sol": {
+      "lastModificationDate": 1626056256525,
+      "contentHash": "daa6be5ab361039403b1f783e698a0fd",
+      "sourceName": "contracts/utils/introspection/ERC165Checker.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165Checker"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC165CheckerMock.sol": {
+      "lastModificationDate": 1626056256241,
+      "contentHash": "185db21182a9486960b8c9368cc69573",
+      "sourceName": "contracts/mocks/ERC165CheckerMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/ERC165Checker.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165CheckerMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC165/ERC165InterfacesSupported.sol": {
+      "lastModificationDate": 1626056256210,
+      "contentHash": "782e9abe56260a34233eca2d838a5086",
+      "sourceName": "contracts/mocks/ERC165/ERC165InterfacesSupported.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165InterfacesSupported",
+        "SupportsInterfaceWithLookupMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC1155/utils/ERC1155Receiver.sol": {
+      "lastModificationDate": 1626056256417,
+      "contentHash": "de467e2231a0f5a8ec4c03d572a853d7",
+      "sourceName": "contracts/token/ERC1155/utils/ERC1155Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC1155Receiver.sol",
+        "../../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Receiver"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/introspection/ERC165Storage.sol": {
+      "lastModificationDate": 1626056256527,
+      "contentHash": "463cdcc1b1e93ed93de97e19ff265db2",
+      "sourceName": "contracts/utils/introspection/ERC165Storage.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165Storage"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC165StorageMock.sol": {
+      "lastModificationDate": 1626056256174,
+      "contentHash": "5e1f7907867ff274418400e6a41d38a7",
+      "sourceName": "contracts/mocks/ERC165StorageMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/ERC165Storage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165StorageMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC165Mock.sol": {
+      "lastModificationDate": 1626056256155,
+      "contentHash": "4af581ea8aa2c8845c950d764f220b26",
+      "sourceName": "contracts/mocks/ERC165Mock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165Mock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC1155ReceiverMock.sol": {
+      "lastModificationDate": 1626056256254,
+      "contentHash": "509f8265587db2c555344f91e2fe5b1d",
+      "sourceName": "contracts/mocks/ERC1155ReceiverMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC1155/IERC1155Receiver.sol",
+        "../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155ReceiverMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC1155/extensions/ERC1155Supply.sol": {
+      "lastModificationDate": 1626056256421,
+      "contentHash": "a7b98577862ef636fb7638d521648345",
+      "sourceName": "contracts/token/ERC1155/extensions/ERC1155Supply.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Supply"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC1155SupplyMock.sol": {
+      "lastModificationDate": 1626056256131,
+      "contentHash": "af37c542a258c2d4d92d8fecd3a2c2ce",
+      "sourceName": "contracts/mocks/ERC1155SupplyMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC1155Mock.sol",
+        "../token/ERC1155/extensions/ERC1155Supply.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155SupplyMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC1155Mock.sol": {
+      "lastModificationDate": 1626056256152,
+      "contentHash": "1be5f5c78217fb35b62f121b7d62296c",
+      "sourceName": "contracts/mocks/ERC1155Mock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC1155/ERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Mock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC1155PausableMock.sol": {
+      "lastModificationDate": 1626056256204,
+      "contentHash": "5d635e73b1a90f2c04feefb8faa919b4",
+      "sourceName": "contracts/mocks/ERC1155PausableMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC1155Mock.sol",
+        "../token/ERC1155/extensions/ERC1155Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155PausableMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC1155BurnableMock.sol": {
+      "lastModificationDate": 1626056256186,
+      "contentHash": "81d86936cc90a2e9aef2539052e7bc42",
+      "sourceName": "contracts/mocks/ERC1155BurnableMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC1155/extensions/ERC1155Burnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155BurnableMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC1155/utils/ERC1155Holder.sol": {
+      "lastModificationDate": 1626056256419,
+      "contentHash": "b3de7ea2002899c2c64ec69ca8c74ff5",
+      "sourceName": "contracts/token/ERC1155/utils/ERC1155Holder.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC1155Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Holder"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC721EnumerableMock.sol": {
+      "lastModificationDate": 1626056256237,
+      "contentHash": "574df2bb6f3a5ddc7332729e496ac01b",
+      "sourceName": "contracts/mocks/ERC721EnumerableMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/extensions/ERC721Enumerable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721EnumerableMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/StringsMock.sol": {
+      "lastModificationDate": 1626056256200,
+      "contentHash": "576c5673181da7bea96fde42342a6e41",
+      "sourceName": "contracts/mocks/StringsMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "StringsMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC721/utils/ERC721Holder.sol": {
+      "lastModificationDate": 1626056256355,
+      "contentHash": "40c7a8a65c915b35f29a010df93b123e",
+      "sourceName": "contracts/token/ERC721/utils/ERC721Holder.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Holder"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC721ReceiverMock.sol": {
+      "lastModificationDate": 1626056256252,
+      "contentHash": "6a446429aabded16b45d40ebbbb7f672",
+      "sourceName": "contracts/mocks/ERC721ReceiverMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/IERC721Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721ReceiverMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC721BurnableMock.sol": {
+      "lastModificationDate": 1626056256191,
+      "contentHash": "4341e54dc10a462272be888db0ae01c4",
+      "sourceName": "contracts/mocks/ERC721BurnableMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/extensions/ERC721Burnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721BurnableMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC721PausableMock.sol": {
+      "lastModificationDate": 1626056256207,
+      "contentHash": "d956d419d6d9abff2fb0fbcb14f5bdae",
+      "sourceName": "contracts/mocks/ERC721PausableMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/extensions/ERC721Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721PausableMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC20PausableMock.sol": {
+      "lastModificationDate": 1626056256138,
+      "contentHash": "751b5341b45a270abb1629777a9624ac",
+      "sourceName": "contracts/mocks/ERC20PausableMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/extensions/ERC20Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20PausableMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/SafeERC20Helper.sol": {
+      "lastModificationDate": 1626056256251,
+      "contentHash": "64369f579f8173db43fb90c1c28a3785",
+      "sourceName": "contracts/mocks/SafeERC20Helper.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol",
+        "../token/ERC20/IERC20.sol",
+        "../token/ERC20/utils/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20NoReturnMock",
+        "ERC20ReturnFalseMock",
+        "ERC20ReturnTrueMock",
+        "SafeERC20Wrapper"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC20/utils/SafeERC20.sol": {
+      "lastModificationDate": 1626056256286,
+      "contentHash": "d37406082a74a9b6b114de522fcb6349",
+      "sourceName": "contracts/token/ERC20/utils/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol",
+        "../../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC20/utils/TokenTimelock.sol": {
+      "lastModificationDate": 1626056256284,
+      "contentHash": "300a40bb85b24b972f1b7b0ac6ddc031",
+      "sourceName": "contracts/token/ERC20/utils/TokenTimelock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TokenTimelock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC777/ERC777.sol": {
+      "lastModificationDate": 1626056256334,
+      "contentHash": "5dc485e66e8766e5bb67a55252cb0f93",
+      "sourceName": "contracts/token/ERC777/ERC777.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC777.sol",
+        "./IERC777Recipient.sol",
+        "./IERC777Sender.sol",
+        "../ERC20/IERC20.sol",
+        "../../utils/Address.sol",
+        "../../utils/Context.sol",
+        "../../utils/introspection/IERC1820Registry.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC777"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC777/IERC777.sol": {
+      "lastModificationDate": 1626056256340,
+      "contentHash": "2e58a223d55cc7d9b53fb3f3b6a5d2d0",
+      "sourceName": "contracts/token/ERC777/IERC777.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC777"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC777/IERC777Recipient.sol": {
+      "lastModificationDate": 1626056256321,
+      "contentHash": "28db9244cc847ef290e8ca4576cd920e",
+      "sourceName": "contracts/token/ERC777/IERC777Recipient.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC777Recipient"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC777/IERC777Sender.sol": {
+      "lastModificationDate": 1626056256323,
+      "contentHash": "ff3b94060a5b0f1f5364dc872b9d0a66",
+      "sourceName": "contracts/token/ERC777/IERC777Sender.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC777Sender"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/introspection/IERC1820Registry.sol": {
+      "lastModificationDate": 1626056256521,
+      "contentHash": "c223419630b736f8dbe292b20b851be6",
+      "sourceName": "contracts/utils/introspection/IERC1820Registry.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1820Registry"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC777/presets/ERC777PresetFixedSupply.sol": {
+      "lastModificationDate": 1626056256326,
+      "contentHash": "1e3c8e922e83686d4e483863fa1b6d4c",
+      "sourceName": "contracts/token/ERC777/presets/ERC777PresetFixedSupply.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC777.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC777PresetFixedSupply"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC777SenderRecipientMock.sol": {
+      "lastModificationDate": 1626056256218,
+      "contentHash": "4d1d27e77d4d1c8ac900d7f5a145bd22",
+      "sourceName": "contracts/mocks/ERC777SenderRecipientMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC777/IERC777.sol",
+        "../token/ERC777/IERC777Sender.sol",
+        "../token/ERC777/IERC777Recipient.sol",
+        "../utils/Context.sol",
+        "../utils/introspection/IERC1820Registry.sol",
+        "../utils/introspection/ERC1820Implementer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC777SenderRecipientMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/introspection/ERC1820Implementer.sol": {
+      "lastModificationDate": 1626056256529,
+      "contentHash": "87a376b77c02867515e433a1f6b9cc76",
+      "sourceName": "contracts/utils/introspection/ERC1820Implementer.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1820Implementer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1820Implementer"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/introspection/IERC1820Implementer.sol": {
+      "lastModificationDate": 1626056256523,
+      "contentHash": "da8e63116dc7c44d084104efff723f07",
+      "sourceName": "contracts/utils/introspection/IERC1820Implementer.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1820Implementer"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC1820ImplementerMock.sol": {
+      "lastModificationDate": 1626056256242,
+      "contentHash": "932975c1e28f595457f9621603c95220",
+      "sourceName": "contracts/mocks/ERC1820ImplementerMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/ERC1820Implementer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1820ImplementerMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/Create2Impl.sol": {
+      "lastModificationDate": 1626056256137,
+      "contentHash": "cf00427c363da666d4c3041c48fb3039",
+      "sourceName": "contracts/mocks/Create2Impl.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Create2.sol",
+        "../utils/introspection/ERC1820Implementer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Create2Impl"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/Create2.sol": {
+      "lastModificationDate": 1626056256563,
+      "contentHash": "bfbf6965fd013ef02c04a98da6c8ef96",
+      "sourceName": "contracts/utils/Create2.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Create2"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC777Mock.sol": {
+      "lastModificationDate": 1626056256109,
+      "contentHash": "3264b51fb51450bf75d97ae95835fc72",
+      "sourceName": "contracts/mocks/ERC777Mock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol",
+        "../token/ERC777/ERC777.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC777Mock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC3156FlashBorrowerMock.sol": {
+      "lastModificationDate": 1626056256133,
+      "contentHash": "f5aaafe8ca151fca303734ce7c7ba8ce",
+      "sourceName": "contracts/mocks/ERC3156FlashBorrowerMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/IERC20.sol",
+        "../interfaces/IERC3156.sol",
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC3156FlashBorrowerMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/interfaces/IERC3156.sol": {
+      "lastModificationDate": 1626056256602,
+      "contentHash": "37325b9b9150524297841e38fbaf7038",
+      "sourceName": "contracts/interfaces/IERC3156.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC3156FlashBorrower",
+        "IERC3156FlashLender"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC20/extensions/ERC20FlashMint.sol": {
+      "lastModificationDate": 1626056256305,
+      "contentHash": "07a51bc11ca69e51e28d1835a13ca51d",
+      "sourceName": "contracts/token/ERC20/extensions/ERC20FlashMint.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../../interfaces/IERC3156.sol",
+        "../ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20FlashMint"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC20FlashMintMock.sol": {
+      "lastModificationDate": 1626056256145,
+      "contentHash": "6c99fcc05afa7e70515f430992e692ad",
+      "sourceName": "contracts/mocks/ERC20FlashMintMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/extensions/ERC20FlashMint.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20FlashMintMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC20/extensions/ERC20Wrapper.sol": {
+      "lastModificationDate": 1626056256302,
+      "contentHash": "b5d896c8fc0c829ed18a5cfd604f46ef",
+      "sourceName": "contracts/token/ERC20/extensions/ERC20Wrapper.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../utils/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Wrapper"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC20WrapperMock.sol": {
+      "lastModificationDate": 1626056256113,
+      "contentHash": "e2d41de561bf9c27cc7c68f5fbbf9fa9",
+      "sourceName": "contracts/mocks/ERC20WrapperMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/extensions/ERC20Wrapper.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20WrapperMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ReentrancyAttack.sol": {
+      "lastModificationDate": 1626056256135,
+      "contentHash": "365700b7d522712a4b8df63604a1f9df",
+      "sourceName": "contracts/mocks/ReentrancyAttack.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyAttack"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ReentrancyMock.sol": {
+      "lastModificationDate": 1626056256173,
+      "contentHash": "318e72355ec39e830288ec04dc4c76a7",
+      "sourceName": "contracts/mocks/ReentrancyMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../security/ReentrancyGuard.sol",
+        "./ReentrancyAttack.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/security/ReentrancyGuard.sol": {
+      "lastModificationDate": 1626056256486,
+      "contentHash": "53fbff678f378956efcb207fa748eaa6",
+      "sourceName": "contracts/security/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC20/presets/ERC20PresetFixedSupply.sol": {
+      "lastModificationDate": 1626056256318,
+      "contentHash": "f944eb1294159f29f947befbf2167c1a",
+      "sourceName": "contracts/token/ERC20/presets/ERC20PresetFixedSupply.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../extensions/ERC20Burnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20PresetFixedSupply"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC20BurnableMock.sol": {
+      "lastModificationDate": 1626056256240,
+      "contentHash": "16c0c062fb93e0fc7c60061c16e198bc",
+      "sourceName": "contracts/mocks/ERC20BurnableMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/extensions/ERC20Burnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20BurnableMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ContextMock.sol": {
+      "lastModificationDate": 1626056256216,
+      "contentHash": "719fb67a19e30889dcb3569262f65b85",
+      "sourceName": "contracts/mocks/ContextMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ContextMock",
+        "ContextMockCaller"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC2771ContextMock.sol": {
+      "lastModificationDate": 1626056256140,
+      "contentHash": "d136ce8da9bd08ff37c24fa830af7412",
+      "sourceName": "contracts/mocks/ERC2771ContextMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ContextMock.sol",
+        "../metatx/ERC2771Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC2771ContextMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/metatx/ERC2771Context.sol": {
+      "lastModificationDate": 1626056256588,
+      "contentHash": "beeb8d1c6549543b555853c31582f4bd",
+      "sourceName": "contracts/metatx/ERC2771Context.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC2771Context"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/finance/PaymentSplitter.sol": {
+      "lastModificationDate": 1626056256598,
+      "contentHash": "673b4831a2a5e4379d256ab27fdf0340",
+      "sourceName": "contracts/finance/PaymentSplitter.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Address.sol",
+        "../utils/Context.sol",
+        "../utils/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PaymentSplitter"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/math/SafeMath.sol": {
+      "lastModificationDate": 1626056256538,
+      "contentHash": "5365090efc586b728719e562ebfed0d6",
+      "sourceName": "contracts/utils/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/SafeMathMock.sol": {
+      "lastModificationDate": 1626056256126,
+      "contentHash": "0f2e411c240cab2951bf7856ffe04b98",
+      "sourceName": "contracts/mocks/SafeMathMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMathMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/EIP712External.sol": {
+      "lastModificationDate": 1626056256188,
+      "contentHash": "f3ce57602b397d603d1ab47a289cd8c9",
+      "sourceName": "contracts/mocks/EIP712External.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/cryptography/draft-EIP712.sol",
+        "../utils/cryptography/ECDSA.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EIP712External"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/metatx/MinimalForwarder.sol": {
+      "lastModificationDate": 1626056256591,
+      "contentHash": "bb78d43b5bad32fbe92995b0b3565471",
+      "sourceName": "contracts/metatx/MinimalForwarder.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/cryptography/ECDSA.sol",
+        "../utils/cryptography/draft-EIP712.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MinimalForwarder"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC20PermitMock.sol": {
+      "lastModificationDate": 1626056256243,
+      "contentHash": "0e343f28085a0e6583aae67dd967ccce",
+      "sourceName": "contracts/mocks/ERC20PermitMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/extensions/draft-ERC20Permit.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20PermitMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC20DecimalsMock.sol": {
+      "lastModificationDate": 1626056256196,
+      "contentHash": "c1a6d0757300973b3d2fcf94cc625ace",
+      "sourceName": "contracts/mocks/ERC20DecimalsMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20DecimalsMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC20/extensions/ERC20Capped.sol": {
+      "lastModificationDate": 1626056256306,
+      "contentHash": "1ef9bb98be133f0008af98b4700b9e95",
+      "sourceName": "contracts/token/ERC20/extensions/ERC20Capped.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Capped"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC20CappedMock.sol": {
+      "lastModificationDate": 1626056256123,
+      "contentHash": "02c66aea2a7fd9cc8807fa7bfcd1f41f",
+      "sourceName": "contracts/mocks/ERC20CappedMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/extensions/ERC20Capped.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20CappedMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/MulticallTest.sol": {
+      "lastModificationDate": 1626056256238,
+      "contentHash": "0471bdc492e4d2505a3e89478217a62a",
+      "sourceName": "contracts/mocks/MulticallTest.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./MulticallTokenMock.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MulticallTest"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/escrow/Escrow.sol": {
+      "lastModificationDate": 1626056256570,
+      "contentHash": "dd60493b0215fe84678df38718c6f782",
+      "sourceName": "contracts/utils/escrow/Escrow.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../access/Ownable.sol",
+        "../Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Escrow"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/security/PullPayment.sol": {
+      "lastModificationDate": 1626056256488,
+      "contentHash": "7c4931ba871bedbcbdc3cba27682bbed",
+      "sourceName": "contracts/security/PullPayment.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/escrow/Escrow.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PullPayment"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/PullPaymentMock.sol": {
+      "lastModificationDate": 1626056256201,
+      "contentHash": "adf7049bf6c48f7c5fe7681ed4f2bd54",
+      "sourceName": "contracts/mocks/PullPaymentMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../security/PullPayment.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PullPaymentMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/escrow/ConditionalEscrow.sol": {
+      "lastModificationDate": 1626056256576,
+      "contentHash": "a97dcf4527039a2d054121e6f66f393e",
+      "sourceName": "contracts/utils/escrow/ConditionalEscrow.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Escrow.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ConditionalEscrow"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/escrow/RefundEscrow.sol": {
+      "lastModificationDate": 1626056256574,
+      "contentHash": "35185e3167083598733cf751dd2fc070",
+      "sourceName": "contracts/utils/escrow/RefundEscrow.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ConditionalEscrow.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "RefundEscrow"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ConditionalEscrowMock.sol": {
+      "lastModificationDate": 1626056256224,
+      "contentHash": "63b04414ec27ee252e7e7431785f5a63",
+      "sourceName": "contracts/mocks/ConditionalEscrowMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/escrow/ConditionalEscrow.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ConditionalEscrowMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ClonesMock.sol": {
+      "lastModificationDate": 1626056256205,
+      "contentHash": "3c3d897099214ce6223c577dc55d212c",
+      "sourceName": "contracts/mocks/ClonesMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/Clones.sol",
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ClonesMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/proxy/Clones.sol": {
+      "lastModificationDate": 1626056256453,
+      "contentHash": "e8f1f04c46c67381a0b13f90439f9b41",
+      "sourceName": "contracts/proxy/Clones.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Clones"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/AddressImpl.sol": {
+      "lastModificationDate": 1626056256125,
+      "contentHash": "521efadbf907d3700ca7378b35bd0c1b",
+      "sourceName": "contracts/mocks/AddressImpl.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AddressImpl"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/StorageSlotMock.sol": {
+      "lastModificationDate": 1626056256198,
+      "contentHash": "681082aac12d55520958e456fe2a8850",
+      "sourceName": "contracts/mocks/StorageSlotMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/StorageSlot.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "StorageSlotMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/proxy/utils/UUPSUpgradeable.sol": {
+      "lastModificationDate": 1626056256455,
+      "contentHash": "747811ea04ad280f116c333fa2a9f5b3",
+      "sourceName": "contracts/proxy/utils/UUPSUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1967/ERC1967Upgrade.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UUPSUpgradeable"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/UUPS/TestInProd.sol": {
+      "lastModificationDate": 1626056256219,
+      "contentHash": "579bd066da12b4a2cd1c40cd1c53dc0d",
+      "sourceName": "contracts/mocks/UUPS/TestInProd.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../CountersImpl.sol",
+        "../../proxy/utils/UUPSUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UUPSUpgradeableBrokenMock",
+        "UUPSUpgradeableMock",
+        "UUPSUpgradeableUnsafeMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/CountersImpl.sol": {
+      "lastModificationDate": 1626056256165,
+      "contentHash": "2446dbf347ba8cbdaedbde8892514a0a",
+      "sourceName": "contracts/mocks/CountersImpl.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Counters.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CountersImpl"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/OwnableMock.sol": {
+      "lastModificationDate": 1626056256159,
+      "contentHash": "3115355f79ef5589879d1bd20de82b32",
+      "sourceName": "contracts/mocks/OwnableMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OwnableMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/SignatureCheckerMock.sol": {
+      "lastModificationDate": 1626056256154,
+      "contentHash": "3d0fda24d5d77624d5a7b158a6762681",
+      "sourceName": "contracts/mocks/SignatureCheckerMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/cryptography/SignatureChecker.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SignatureCheckerMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ECDSAMock.sol": {
+      "lastModificationDate": 1626056256156,
+      "contentHash": "30b1ba3aa464ef4c74c69919dad17b23",
+      "sourceName": "contracts/mocks/ECDSAMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/cryptography/ECDSA.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ECDSAMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/SafeCastMock.sol": {
+      "lastModificationDate": 1626056256203,
+      "contentHash": "88d508f23615100bb2d5df5154d18112",
+      "sourceName": "contracts/mocks/SafeCastMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/math/SafeCast.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeCastMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/token/ERC20/extensions/ERC20VotesComp.sol": {
+      "lastModificationDate": 1626056256296,
+      "contentHash": "e48d37d5a40aca9a708443e3dd1b4c03",
+      "sourceName": "contracts/token/ERC20/extensions/ERC20VotesComp.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20Votes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20VotesComp"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC20VotesCompMock.sol": {
+      "lastModificationDate": 1626056256164,
+      "contentHash": "d5feb91e29eb503d3401af62d360be04",
+      "sourceName": "contracts/mocks/ERC20VotesCompMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/extensions/ERC20VotesComp.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20VotesCompMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ArraysImpl.sol": {
+      "lastModificationDate": 1626056256139,
+      "contentHash": "896807a6030108ad8e8872fceca45a48",
+      "sourceName": "contracts/mocks/ArraysImpl.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Arrays.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ArraysImpl"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC20SnapshotMock.sol": {
+      "lastModificationDate": 1626056256162,
+      "contentHash": "d1c6ab468983add875049a57a5485e77",
+      "sourceName": "contracts/mocks/ERC20SnapshotMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/extensions/ERC20Snapshot.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20SnapshotMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/AccessControlEnumerableMock.sol": {
+      "lastModificationDate": 1626056256124,
+      "contentHash": "540e353a94b07ea4fc00e8d7c271da65",
+      "sourceName": "contracts/mocks/AccessControlEnumerableMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/AccessControlEnumerable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControlEnumerableMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/EnumerableSetMock.sol": {
+      "lastModificationDate": 1626056256202,
+      "contentHash": "63e6d1b126c8855333cd1c7b9c4b2f5b",
+      "sourceName": "contracts/mocks/EnumerableSetMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/structs/EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableAddressSetMock",
+        "EnumerableBytes32SetMock",
+        "EnumerableUintSetMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/structs/EnumerableMap.sol": {
+      "lastModificationDate": 1626056256558,
+      "contentHash": "399f9b009afe8033a4b735beeda3b295",
+      "sourceName": "contracts/utils/structs/EnumerableMap.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableMap"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/EnumerableMapMock.sol": {
+      "lastModificationDate": 1626056256214,
+      "contentHash": "4e0d77aaa9ee32e23d436883db8fd9ef",
+      "sourceName": "contracts/mocks/EnumerableMapMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/structs/EnumerableMap.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableMapMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/BadBeacon.sol": {
+      "lastModificationDate": 1626056256117,
+      "contentHash": "d821204fbf5f1e3f73a880bc121d3d5a",
+      "sourceName": "contracts/mocks/BadBeacon.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BadBeaconNoImpl",
+        "BadBeaconNotContract"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/BitmapMock.sol": {
+      "lastModificationDate": 1626056256259,
+      "contentHash": "6144ba9e614894591453591ab6fd3287",
+      "sourceName": "contracts/mocks/BitmapMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/structs/BitMaps.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BitMapMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/structs/BitMaps.sol": {
+      "lastModificationDate": 1626056256556,
+      "contentHash": "ca7a256fc2e26f883b63f632f72f001d",
+      "sourceName": "contracts/utils/structs/BitMaps.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BitMaps"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/CallReceiverMock.sol": {
+      "lastModificationDate": 1626056256121,
+      "contentHash": "baad85d35857caff11c22fd98dfa6c4c",
+      "sourceName": "contracts/mocks/CallReceiverMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CallReceiverMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ClashingImplementation.sol": {
+      "lastModificationDate": 1626056256221,
+      "contentHash": "40774f559f6efe4bb93058b32e680c02",
+      "sourceName": "contracts/mocks/ClashingImplementation.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ClashingImplementation"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/DummyImplementation.sol": {
+      "lastModificationDate": 1626056256130,
+      "contentHash": "23052da0351ecbcd43802845a41fbeef",
+      "sourceName": "contracts/mocks/DummyImplementation.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "DummyImplementation",
+        "DummyImplementationV2",
+        "Impl"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC165/ERC165MissingData.sol": {
+      "lastModificationDate": 1626056256213,
+      "contentHash": "f7a435a8acb3f5f0bcf2c8aa87a6ab6b",
+      "sourceName": "contracts/mocks/ERC165/ERC165MissingData.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165MissingData"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/ERC165/ERC165NotSupported.sol": {
+      "lastModificationDate": 1626056256209,
+      "contentHash": "3d6acaa746a431a94963bccd84b1ef76",
+      "sourceName": "contracts/mocks/ERC165/ERC165NotSupported.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165NotSupported"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/EtherReceiverMock.sol": {
+      "lastModificationDate": 1626056256136,
+      "contentHash": "03543c772b5715405d1847fe2a7e6ba4",
+      "sourceName": "contracts/mocks/EtherReceiverMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EtherReceiverMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/InitializableMock.sol": {
+      "lastModificationDate": 1626056256122,
+      "contentHash": "d6f93798c874910a89c75060979ce1f9",
+      "sourceName": "contracts/mocks/InitializableMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "InitializableMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/proxy/utils/Initializable.sol": {
+      "lastModificationDate": 1626056256454,
+      "contentHash": "cbb8386f0120d46d66ff42dffbbc16c1",
+      "sourceName": "contracts/proxy/utils/Initializable.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/SingleInheritanceInitializableMocks.sol": {
+      "lastModificationDate": 1626056256239,
+      "contentHash": "a0f7ac0b67fdf84c854701706691731e",
+      "sourceName": "contracts/mocks/SingleInheritanceInitializableMocks.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MigratableMockV1",
+        "MigratableMockV2",
+        "MigratableMockV3"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/RegressionImplementation.sol": {
+      "lastModificationDate": 1626056256119,
+      "contentHash": "427d4c71d64926b9de5d60e5686380bf",
+      "sourceName": "contracts/mocks/RegressionImplementation.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Implementation1",
+        "Implementation2",
+        "Implementation3",
+        "Implementation4"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/MultipleInheritanceInitializableMocks.sol": {
+      "lastModificationDate": 1626056256222,
+      "contentHash": "cf3a0888ad767949a3988b3bf646579b",
+      "sourceName": "contracts/mocks/MultipleInheritanceInitializableMocks.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SampleChild",
+        "SampleFather",
+        "SampleGramps",
+        "SampleHuman",
+        "SampleMother"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/MerkleProofWrapper.sol": {
+      "lastModificationDate": 1626056256190,
+      "contentHash": "d3402a4e5c9abdcb3a723a93f0408ab2",
+      "sourceName": "contracts/mocks/MerkleProofWrapper.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/cryptography/MerkleProof.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MerkleProofWrapper"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/cryptography/MerkleProof.sol": {
+      "lastModificationDate": 1626056256509,
+      "contentHash": "88f50e7054a1be7b6c150c50c3552f9b",
+      "sourceName": "contracts/utils/cryptography/MerkleProof.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MerkleProof"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/mocks/SignedSafeMathMock.sol": {
+      "lastModificationDate": 1626056256142,
+      "contentHash": "c0abc8207b2fe94f7e6e14bc8f32e130",
+      "sourceName": "contracts/mocks/SignedSafeMathMock.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/math/SignedSafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SignedSafeMathMock"
+      ]
+    },
+    "/Users/Shared/crypto/nextart/contracts/utils/math/SignedSafeMath.sol": {
+      "lastModificationDate": 1626056256539,
+      "contentHash": "22f39cc4e65cf283981e866296b0d25b",
+      "sourceName": "contracts/utils/math/SignedSafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SignedSafeMath"
+      ]
+    }
+  }
+}

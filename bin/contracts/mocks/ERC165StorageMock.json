@@ -1,0 +1,258 @@
+{
+    "contractName": "ERC165StorageMock",
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "interfaceId",
+                    "type": "bytes4"
+                }
+            ],
+            "name": "registerInterface",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "interfaceId",
+                    "type": "bytes4"
+                }
+            ],
+            "name": "supportsInterface",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"registerInterface\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"supportsInterface(bytes4)\":{\"details\":\"See {IERC165-supportsInterface}.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/Shared/crypto/nextart/contracts/mocks/ERC165StorageMock.sol\":\"ERC165StorageMock\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/Shared/crypto/nextart/contracts/mocks/ERC165StorageMock.sol\":{\"keccak256\":\"0x3503533c82bf29eb93e3c2ed62f7850f3cd874584ecb8be4ed4715972f44f454\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://810472e592f3fb70aebe0f9a27195c092597844b1f027f70a665df300315a9b7\",\"dweb:/ipfs/QmYaQsxyAzWJEba9uDsYPWEqCKRDtzzNF9fDGPuvWtupJM\"]},\"/Users/Shared/crypto/nextart/contracts/utils/introspection/ERC165.sol\":{\"keccak256\":\"0x5718c5df9bd67ac68a796961df938821bb5dc0cd4c6118d77e9145afb187409b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d10e1d9b26042424789246603906ad06143bf9a928f4e99de8b5e3bdc662f549\",\"dweb:/ipfs/Qmejonoaj5MLekPus229rJQHcC6E9dz2xorjHJR84fMfmn\"]},\"/Users/Shared/crypto/nextart/contracts/utils/introspection/ERC165Storage.sol\":{\"keccak256\":\"0x90716b47325c5cd49d4eef5bbe4cba711c81ce317479038e4f0a9a17a206945a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://abab613a1bff1c82cecf493e2fa4f940a21151f477d46e9593e14ee87a7f8be0\",\"dweb:/ipfs/QmXTm38aLpUaAwxBLXhtcLFmeDNLXQVhqGdbkY3mvZm1zD\"]},\"/Users/Shared/crypto/nextart/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0xa28007762d9da9db878dd421960c8cb9a10471f47ab5c1b3309bfe48e9e79ff4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://796ab6e88af7bf0e78def0f059310c903af6a312b565344e0ff524a0f26e81c6\",\"dweb:/ipfs/QmcsVgLgzWdor3UnAztUkXKNGcysm1MPneWksF72AvnwBx\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b506101ad806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806301ffc9a71461003b578063214cdb8014610062575b600080fd5b61004e610049366004610146565b610077565b604051901515815260200160405180910390f35b610075610070366004610146565b6100b7565b005b60006301ffc9a760e01b6001600160e01b0319831614806100b157506001600160e01b0319821660009081526020819052604090205460ff165b92915050565b6100c0816100c3565b50565b6001600160e01b031980821614156101215760405162461bcd60e51b815260206004820152601c60248201527f4552433136353a20696e76616c696420696e7465726661636520696400000000604482015260640160405180910390fd5b6001600160e01b0319166000908152602081905260409020805460ff19166001179055565b60006020828403121561015857600080fd5b81356001600160e01b03198116811461017057600080fd5b939250505056fea2646970667358221220af444032442a6b6c03593a244b1d9ac212fe7beb5cccf8af0f5bc650b6d9d69764736f6c63430008060033",
+    "deployedBytecode": "608060405234801561001057600080fd5b50600436106100365760003560e01c806301ffc9a71461003b578063214cdb8014610062575b600080fd5b61004e610049366004610146565b610077565b604051901515815260200160405180910390f35b610075610070366004610146565b6100b7565b005b60006301ffc9a760e01b6001600160e01b0319831614806100b157506001600160e01b0319821660009081526020819052604090205460ff165b92915050565b6100c0816100c3565b50565b6001600160e01b031980821614156101215760405162461bcd60e51b815260206004820152601c60248201527f4552433136353a20696e76616c696420696e7465726661636520696400000000604482015260640160405180910390fd5b6001600160e01b0319166000908152602081905260409020805460ff19166001179055565b60006020828403121561015857600080fd5b81356001600160e01b03198116811461017057600080fd5b939250505056fea2646970667358221220af444032442a6b6c03593a244b1d9ac212fe7beb5cccf8af0f5bc650b6d9d69764736f6c63430008060033",
+    "sourceMap": "110:154:37:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "110:154:37:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;523:188:158;;;;;;:::i;:::-;;:::i;:::-;;;470:14:170;;463:22;445:41;;433:2;418:18;523:188:158;;;;;;;160:102:37;;;;;;:::i;:::-;;:::i;:::-;;523:188:158;608:4;-1:-1:-1;;;;;;;;;871:40:156;;;631:73:158;;;-1:-1:-1;;;;;;;671:33:158;;:20;:33;;;;;;;;;;;;;631:73;624:80;523:188;-1:-1:-1;;523:188:158:o;160:102:37:-;224:31;243:11;224:18;:31::i;:::-;160:102;:::o;1105:198:158:-;-1:-1:-1;;;;;;1188:25:158;;;;;1180:66;;;;-1:-1:-1;;;1180:66:158;;699:2:170;1180:66:158;;;681:21:170;738:2;718:18;;;711:30;777;757:18;;;750:58;825:18;;1180:66:158;;;;;;;;-1:-1:-1;;;;;;1256:33:158;:20;:33;;;;;;;;;;:40;;-1:-1:-1;;1256:40:158;1292:4;1256:40;;;1105:198::o;14:286:170:-;72:6;125:2;113:9;104:7;100:23;96:32;93:2;;;141:1;138;131:12;93:2;167:23;;-1:-1:-1;;;;;;219:32:170;;209:43;;199:2;;266:1;263;256:12;199:2;289:5;83:217;-1:-1:-1;;;83:217:170:o",
+    "sourcePath": "/Users/Shared/crypto/nextart/contracts/mocks/ERC165StorageMock.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.6+commit.11564f7e"
+    },
+    "ast": {
+        "absolutePath": "/Users/Shared/crypto/nextart/contracts/mocks/ERC165StorageMock.sol",
+        "exportedSymbols": {
+            "ERC165": [
+                18938
+            ],
+            "ERC165Storage": [
+                19193
+            ],
+            "ERC165StorageMock": [
+                3833
+            ],
+            "IERC165": [
+                19264
+            ]
+        },
+        "id": 3834,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 3819,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "33:23:37"
+            },
+            {
+                "absolutePath": "/Users/Shared/crypto/nextart/contracts/utils/introspection/ERC165Storage.sol",
+                "file": "../utils/introspection/ERC165Storage.sol",
+                "id": 3820,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 3834,
+                "sourceUnit": 19194,
+                "src": "58:50:37",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "abstract": false,
+                "baseContracts": [
+                    {
+                        "baseName": {
+                            "id": 3821,
+                            "name": "ERC165Storage",
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 19193,
+                            "src": "140:13:37"
+                        },
+                        "id": 3822,
+                        "nodeType": "InheritanceSpecifier",
+                        "src": "140:13:37"
+                    }
+                ],
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 3833,
+                "linearizedBaseContracts": [
+                    3833,
+                    19193,
+                    18938,
+                    19264
+                ],
+                "name": "ERC165StorageMock",
+                "nameLocation": "119:17:37",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "body": {
+                            "id": 3831,
+                            "nodeType": "Block",
+                            "src": "214:48:37",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "id": 3828,
+                                                "name": "interfaceId",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 3824,
+                                                "src": "243:11:37",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bytes4",
+                                                    "typeString": "bytes4"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_bytes4",
+                                                    "typeString": "bytes4"
+                                                }
+                                            ],
+                                            "id": 3827,
+                                            "name": "_registerInterface",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 19192,
+                                            "src": "224:18:37",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$returns$__$",
+                                                "typeString": "function (bytes4)"
+                                            }
+                                        },
+                                        "id": 3829,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "224:31:37",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 3830,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "224:31:37"
+                                }
+                            ]
+                        },
+                        "functionSelector": "214cdb80",
+                        "id": 3832,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "registerInterface",
+                        "nameLocation": "169:17:37",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 3825,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 3824,
+                                    "mutability": "mutable",
+                                    "name": "interfaceId",
+                                    "nameLocation": "194:11:37",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 3832,
+                                    "src": "187:18:37",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bytes4",
+                                        "typeString": "bytes4"
+                                    },
+                                    "typeName": {
+                                        "id": 3823,
+                                        "name": "bytes4",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "187:6:37",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bytes4",
+                                            "typeString": "bytes4"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "186:20:37"
+                        },
+                        "returnParameters": {
+                            "id": 3826,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "214:0:37"
+                        },
+                        "scope": 3833,
+                        "src": "160:102:37",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 3834,
+                "src": "110:154:37",
+                "usedErrors": []
+            }
+        ],
+        "src": "33:232:37"
+    },
+    "functionHashes": {
+        "registerInterface(bytes4)": "214cdb80",
+        "supportsInterface(bytes4)": "01ffc9a7"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "85800",
+            "executionCost": "135",
+            "totalCost": "85935"
+        },
+        "external": {
+            "registerInterface(bytes4)": "24660",
+            "supportsInterface(bytes4)": "2569"
+        }
+    }
+}
